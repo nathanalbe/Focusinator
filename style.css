@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #00b4db, #0083b0); /* Cool background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body height to fill the entire viewport */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #3498db; /* Cool blue header color */
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3498db; /* Cool blue slider color */
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 23px;
+    left: 8px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + .toggle-slider {
+    background-color: #2ecc71; /* Cool green when toggled on */
+  }
+  
+  input[type="checkbox"]:checked + .toggle-slider:before {
+    transform: translateX(85px); /* Slide all the way to the end */
+  }
+  
+  .toggle-text {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Add hover effect for toggle-slider */
+  .toggle-slider:hover {
+    background-color: #5DADE2; /* Lighter blue on hover */
+  }
+  
+  /* Add hover effect for toggle-slider when toggled */
+  input[type="checkbox"]:checked + .toggle-slider:hover {
+    background-color: #58D68D; /* Lighter green on hover when toggled */
+  }
+  

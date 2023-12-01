@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Focusinator",
+  "version": "1.0",
+  "description": "An extension that enhances your quality of studying",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "defalut_title": "Focusinator"
+  },
+  "icons": {
+    "16": "imgs/icon16.png",
+    "48": "imgs/icon48.png",
+    "128": "imgs/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["imgs/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
