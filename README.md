@@ -1,5 +1,4 @@
-# Focusinator
-- Study helper chrome web extension JavaScript | HTML | CSS
+# Focusinator Study helper chrome web extension
 
 
 - Developed a background listening Chrome extension designed to ensure users stay focused on their study materials.
