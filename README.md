@@ -1,5 +1,5 @@
 # Focusinator, a Study helper chrome web extension
-|-|
+| - |
 |<img src="imgs/Focusinator icon.png" width="500" />|
 
 - Developed a background listening Chrome extension designed to ensure users stay focused on their study materials.
